@@ -1,0 +1,66 @@
+# scenario: sensor_fault - 1-2 sample glitch ignored; dropout & out-of-range -> SENSOR_FAULT, auto-recovery
+[    0.0s] EVENT PUMP_START       level 20.0% < 25.0%
+[    0.0s] LVL= 20.0% (true  20.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[   10.0s] LVL= 23.0% (true  23.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[   20.0s] SIM   inject: spike_on 95
+[   20.0s] LVL= 25.7% (true  26.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=BAD
+[   22.0s] SIM   inject: spike_off 0
+[   30.0s] LVL= 29.0% (true  29.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[   40.0s] LVL= 32.1% (true  32.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[   50.0s] LVL= 34.9% (true  35.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[   60.0s] SIM   inject: dropout_on 0
+[   60.0s] LVL= 37.8% (true  38.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=BAD
+[   62.0s] EVENT SENSOR_FAULT     no reading / out of range; 3 bad samples; pump forced OFF
+[   62.0s] EVENT PUMP_STOP        sensor fault
+[   62.0s] LVL= -1.0% (true  38.6%) PUMP=OFF STATE=SENSOR_FAULT SRC=OK    SENSOR=BAD
+[   70.0s] LVL= -1.0% (true  37.0%) PUMP=OFF STATE=SENSOR_FAULT SRC=OK    SENSOR=BAD
+[   75.0s] SIM   inject: dropout_off 0
+[   79.0s] EVENT SENSOR_RECOVERED 5 consecutive good samples
+[   79.0s] LVL= 35.3% (true  35.2%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[   80.0s] LVL= 35.1% (true  35.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[   90.0s] LVL= 33.1% (true  33.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  100.0s] LVL= 31.0% (true  31.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  110.0s] LVL= 29.1% (true  29.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  120.0s] LVL= 27.0% (true  27.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  130.0s] LVL= 25.0% (true  25.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  131.0s] EVENT PUMP_START       level 24.8% < 25.0%
+[  131.0s] LVL= 24.8% (true  24.8%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  140.0s] LVL= 27.4% (true  27.5%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  150.0s] SIM   inject: spike_on 135
+[  150.0s] LVL= 30.1% (true  30.5%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=BAD
+[  152.0s] EVENT SENSOR_FAULT     no reading / out of range; 3 bad samples; pump forced OFF
+[  152.0s] EVENT PUMP_STOP        sensor fault
+[  152.0s] LVL= -1.0% (true  31.1%) PUMP=OFF STATE=SENSOR_FAULT SRC=OK    SENSOR=BAD
+[  160.0s] SIM   inject: spike_off 0
+[  160.0s] LVL= 29.5% (true  29.5%) PUMP=OFF STATE=SENSOR_FAULT SRC=OK    SENSOR=BAD
+[  164.0s] EVENT SENSOR_RECOVERED 5 consecutive good samples
+[  164.0s] LVL= 28.8% (true  28.7%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  170.0s] LVL= 27.6% (true  27.5%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  180.0s] LVL= 25.4% (true  25.5%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+[  183.0s] EVENT PUMP_START       level 24.9% < 25.0%
+[  183.0s] LVL= 24.9% (true  24.9%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  190.0s] LVL= 26.9% (true  27.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  200.0s] LVL= 30.1% (true  30.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  210.0s] LVL= 32.9% (true  33.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  220.0s] LVL= 36.0% (true  36.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  230.0s] LVL= 39.1% (true  39.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  240.0s] LVL= 42.0% (true  42.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  250.0s] LVL= 44.9% (true  45.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  260.0s] LVL= 48.1% (true  48.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  270.0s] LVL= 51.1% (true  51.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  280.0s] LVL= 54.0% (true  54.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  290.0s] LVL= 56.9% (true  57.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  300.0s] LVL= 59.9% (true  60.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  310.0s] LVL= 63.1% (true  63.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  320.0s] LVL= 66.0% (true  66.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  330.0s] LVL= 68.9% (true  69.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  340.0s] LVL= 72.0% (true  72.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  350.0s] LVL= 75.1% (true  75.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  360.0s] LVL= 78.0% (true  78.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  370.0s] LVL= 81.0% (true  81.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  380.0s] LVL= 84.0% (true  84.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  390.0s] LVL= 86.9% (true  87.0%) PUMP=ON  STATE=FILLING      SRC=OK    SENSOR=OK
+[  400.0s] EVENT PUMP_STOP        level 90.0% >= 90.0%
+[  400.0s] LVL= 90.0% (true  90.0%) PUMP=OFF STATE=IDLE         SRC=OK    SENSOR=OK
+# summary: sensor_fault: max_level=90.0% min_level=20.3% pump_starts=3 pump_on_s=300 dry_run_s=0 final_state=IDLE
+

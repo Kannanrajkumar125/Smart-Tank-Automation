@@ -1,0 +1,73 @@
+[     0.0s] PUB qos1 retain plant/site1/tank1/status online
+[     0.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":0,"code":"PUMP_START","detail":"level 20.0% < 25.0%"}
+[     0.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":0,"level_pct":20.0,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    10.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":10000,"level_pct":23.0,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    20.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":20000,"level_pct":26.0,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    30.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":30000,"level_pct":29.1,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    40.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":40000,"level_pct":31.9,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    50.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":50000,"level_pct":35.0,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[    52.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":52000,"code":"SOURCE_EMPTY","detail":"source low-level active; pump stopped to avoid dry run"}
+[    52.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":52000,"code":"PUMP_STOP","detail":"dry-run protection: source empty"}
+[    52.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":52000,"level_pct":35.5,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[    60.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":60000,"level_pct":34.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[    70.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":70000,"level_pct":32.1,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[    80.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":80000,"level_pct":30.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[    90.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":90000,"level_pct":28.1,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   100.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":100000,"level_pct":25.9,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   110.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":110000,"level_pct":24.1,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   120.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":120000,"level_pct":22.1,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   130.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":130000,"level_pct":20.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   140.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":140000,"level_pct":18.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   150.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":150000,"level_pct":16.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   160.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":160000,"level_pct":14.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   170.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":170000,"level_pct":12.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   180.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":180000,"level_pct":10.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   190.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":190000,"level_pct":8.0,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":true}
+[   200.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":200000,"level_pct":5.9,"pump":"OFF","state":"SOURCE_EMPTY","sensor_ok":true,"source_empty":false}
+[   204.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":204000,"code":"SOURCE_RESTORED","detail":"5 consecutive OK samples"}
+[   204.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":204000,"level_pct":5.2,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   205.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":205000,"code":"PUMP_START","detail":"level 5.1% < 25.0%"}
+[   205.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":205000,"level_pct":5.1,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   210.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":210000,"level_pct":6.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   220.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":220000,"level_pct":9.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   230.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":230000,"level_pct":12.4,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   240.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":240000,"level_pct":15.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   250.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":250000,"level_pct":18.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   260.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":260000,"level_pct":21.4,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   270.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":270000,"level_pct":24.4,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   280.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":280000,"level_pct":27.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   290.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":290000,"level_pct":30.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   300.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":300000,"level_pct":33.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   310.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":310000,"level_pct":36.4,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   320.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":320000,"level_pct":39.4,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   330.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":330000,"level_pct":42.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   340.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":340000,"level_pct":45.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   350.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":350000,"level_pct":48.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   360.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":360000,"level_pct":51.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   370.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":370000,"level_pct":54.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   380.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":380000,"level_pct":57.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   390.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":390000,"level_pct":60.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   400.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":400000,"level_pct":63.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   410.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":410000,"level_pct":66.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   420.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":420000,"level_pct":69.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   430.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":430000,"level_pct":72.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   440.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":440000,"level_pct":75.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   450.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":450000,"level_pct":78.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   460.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":460000,"level_pct":81.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   470.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":470000,"level_pct":84.6,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   480.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":480000,"level_pct":87.5,"pump":"ON","state":"FILLING","sensor_ok":true,"source_empty":false}
+[   489.0s] PUB qos1        plant/site1/tank1/event {"ts_ms":489000,"code":"PUMP_STOP","detail":"level 90.2% >= 90.0%"}
+[   489.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":489000,"level_pct":90.2,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   490.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":490000,"level_pct":90.1,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   500.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":500000,"level_pct":88.1,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   510.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":510000,"level_pct":86.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   520.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":520000,"level_pct":83.9,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   530.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":530000,"level_pct":82.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   540.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":540000,"level_pct":80.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   550.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":550000,"level_pct":78.1,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   560.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":560000,"level_pct":76.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   570.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":570000,"level_pct":74.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   580.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":580000,"level_pct":72.0,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   590.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":590000,"level_pct":69.9,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   600.0s] PUB qos0        plant/site1/tank1/telemetry {"ts_ms":600000,"level_pct":68.1,"pump":"OFF","state":"IDLE","sensor_ok":true,"source_empty":false}
+[   600.0s] PUB qos1 retain plant/site1/tank1/status offline

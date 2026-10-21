@@ -1,0 +1,5 @@
+normal: # summary: normal: max_level=90.2% min_level=20.3% pump_starts=3 pump_on_s=549 dry_run_s=0 final_state=FILLING
+source_empty: # summary: source_empty: max_level=90.2% min_level=5.0% pump_starts=2 pump_on_s=336 dry_run_s=0 final_state=IDLE
+sensor_fault: # summary: sensor_fault: max_level=90.0% min_level=20.3% pump_starts=3 pump_on_s=300 dry_run_s=0 final_state=IDLE
+no_flow: # summary: no_flow: max_level=60.3% min_level=0.0% pump_starts=2 pump_on_s=231 dry_run_s=30 final_state=FILLING
+stuck_sensor: # summary: stuck_sensor: max_level=77.3% min_level=20.3% pump_starts=2 pump_on_s=235 dry_run_s=0 final_state=FILLING
